@@ -1,28 +1,30 @@
 // Check if user has already given consent
-var userConsent = localStorage.getItem('userConsent');
+// var userConsent = localStorage.getItem('userConsent');
 
-var consentBanner = document.getElementById('consent-banner');
-var acceptButton = document.getElementById('accept-consent');
+// var consentBanner = document.getElementById('consent-banner');
+// var acceptButton = document.getElementById('accept-consent');
 // var removeButton = document.getElementById('remove-banner');
 
 document.addEventListener('DOMContentLoaded',function(event){
 
-  acceptButton.addEventListener('click', function() {
-    localStorage.setItem('userConsent', 'true');
-    consentBanner.style.display = 'none';
-  });
+  // acceptButton.addEventListener('click', function() {
+  //   localStorage.setItem('userConsent', 'true');
+  //   consentBanner.style.display = 'none';
+  // });
 
   // removeButton.addEventListener('click', function() {
   //   localStorage.setItem('userConsent', 'true');
   //   consentBanner.style.display = 'none';
   // });
 
-  if (userConsent) {
-    checkScreen(bigScreens);
-  }else{
-    initializeTracking();
-  }
+  // if (userConsent) {
+  //   checkScreen(bigScreens);
+  // }else{
+  //   initializeTracking();
+  // }
  
+  checkScreen(bigScreens)
+
 });
 
 
@@ -32,7 +34,7 @@ function initializeTracking() {
   // Function to execute if user comes from a different domain or hasn't been to your site
   function executeFunction() {
       //console.log("Function executed: User is new or coming from a different domain.");
-      runSequence();
+      checkScreen(bigScreens);
   }
 
   // Check the referrer

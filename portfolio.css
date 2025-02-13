@@ -377,6 +377,7 @@ body{
     color: #fff;
     display: flex;
     align-items: center;
+    justify-content: space-around;
     overflow: hidden;
     clip-path: polygon(50% 0, 50% 0, 50% 100%, 50% 100%);
     --clip: 0%
@@ -392,6 +393,8 @@ body{
   background: rgba(0, 0, 0, 0.3);
   
 }
+
+
 
 .call-to-action{
     z-index: 1;
@@ -852,6 +855,10 @@ body{
 
 .box-4{
   background-image: url("Frame\ 5.png");
+}
+
+.box-5{
+  background-image: url("Frame\ 6.png");
 }
 
 .project-info{
@@ -1707,6 +1714,12 @@ footer{
   .box-3{
     background-image: url("Frame\ 1\ \(1\).png");
   }
+
+  .box-5{
+    background-image: url("Frame\ 6.png");
+  }
+
+ 
   
   /* .box.active {
     color: white;
